@@ -6,5 +6,6 @@ app = FastAPI()
 
 @app.get("/wait")
 async def wait():
-    await asyncio.sleep(3)  # Non-blocking sleep
+    await asyncio.sleep(3)
+
     return {"message": "Finished waiting!"}
